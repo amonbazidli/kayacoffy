@@ -286,22 +286,32 @@ footer {
     header {
         flex-direction: column;
         text-align: center;
-        padding: 1rem;
+        padding: 0.5rem;
+        /* Reduced padding */
     }
 
     .header-left {
         align-items: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        /* Reduced margin */
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        /* Smaller logo */
     }
 
     .boycott-info {
         justify-content: center;
         flex-wrap: wrap;
+        font-size: 0.65rem;
+        /* Smaller info text */
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+        /* Reduced gap */
         padding: 0;
     }
 
