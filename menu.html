@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayacoffy - Menü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">KAYACOFFY</div>
+            <div class="boycott-info">
+                <span class="hashtag">#FREEPALESTINE</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg"
+                    alt="Palestine Flag" class="flag-img">
+                <span class="info-text">İşyerimizde boykot ürünleri kullanılmamaktadır.</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="menu.html">Menü</a></li>
+                <li><a href="accessories.html" target="_blank">Aksesuarlar</a></li>
+                <li><a href="about.html" target="_blank">Hakkımızda</a></li>
+                <li><a href="contact.html" target="_blank">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <div style="text-align:center;">
+            <h2 class="section-title">Kahve Çeşitlerimiz</h2>
+        </div>
+
+        <div class="coffee-grid">
+
+            <div class="coffee-card">
+                <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=500&q=60"
+                    alt="Espresso" class="coffee-img">
+                <div class="card-content">
+                    <h3>Espresso Shot</h3>
+                    <p>Güne zinde başlamak isteyenler için saf enerji.</p>
+                    <p class="price">90 TL</p>
+                    <button class="btn" onclick="openModal('modal-espresso')">Tarifi Gör</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <img src="americano.png" alt="Americano" class="coffee-img">
+                <div class="card-content">
+                    <h3>Americano</h3>
+                    <p>Espresso'nun sıcak su ile inceltilmiş hali.</p>
+                    <p class="price">100 TL</p>
+                    <button class="btn" onclick="openModal('modal-americano')">Tarifi Gör</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop"
+                    alt="Latte" class="coffee-img">
+                <div class="card-content">
+                    <h3>Klasik Latte</h3>
+                    <p>Yumuşak içim, bol süt ve espresso dengesi.</p>
+                    <p class="price">120 TL</p>
+                    <button class="btn" onclick="openModal('modal-latte')">Tarifi Gör</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=60"
+                    alt="Cappuccino" class="coffee-img">
+                <div class="card-content">
+                    <h3>Cappuccino</h3>
+                    <p>Eşit oranda espresso, sıcak süt ve yoğun köpük.</p>
+                    <p class="price">120 TL</p>
+                    <button class="btn" onclick="openModal('modal-cappuccino')">Tarifi Gör</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <img src="mocha.png" alt="Mocha" class="coffee-img">
+                <div class="card-content">
+                    <h3>Mocha</h3>
+                    <p>Kahve ve çikolatanın tatlı buluşması.</p>
+                    <p class="price">140 TL</p>
+                    <button class="btn" onclick="openModal('modal-mocha')">Tarifi Gör</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <img src="turkish_coffee.png" alt="Türk Kahvesi" class="coffee-img">
+                <div class="card-content">
+                    <h3>Türk Kahvesi</h3>
+                    <p>Geleneksel lezzet, bol köpüklü ve yoğun.</p>
+                    <p class="price">80 TL</p>
+                    <button class="btn" onclick="openModal('modal-turkish')">Tarifi Gör</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kayacoffy. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <div id="modal-latte" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-latte')">&times;</span>
+            <div class="modal-header">
+                <h2>Klasik Latte Nasıl Yapılır?</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>İçerik:</strong> 1 shot Espresso, 3 birim sıcak süt, ince süt köpüğü.</p>
+                <div class="recipe-step">1. Taze öğütülmüş çekirdeklerden 1 shot espresso (30ml) hazırlayın.</div>
+                <div class="recipe-step">2. Sütü 65°C'ye kadar ısıtın ve çok az köpürtün (kremamsı olmalı).</div>
+                <div class="recipe-step">3. Espresso'nun üzerine sütü yavaşça dökün.</div>
+                <p><em>İpucu: Dilerseniz üzerine karamel şurubu ekleyebilirsiniz.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-espresso" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-espresso')">&times;</span>
+            <div class="modal-header">
+                <h2>Espresso Hazırlanışı</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>İçerik:</strong> 7-9gr ince öğütülmüş kahve, 30ml su.</p>
+                <div class="recipe-step">1. Kahveyi çok ince ayarda öğütün.</div>
+                <div class="recipe-step">2. Portafiltreye kahveyi koyun ve "tamper" ile düzleştirin.</div>
+                <div class="recipe-step">3. Makineye takın ve 25-30 saniye boyunca basınçlı su verin.</div>
+                <p><em>İpucu: Üzerinde oluşan altın sarısı 'krema' tabakası kalitesini gösterir.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cappuccino" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-cappuccino')">&times;</span>
+            <div class="modal-header">
+                <h2>Cappuccino Tarifi</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>İçerik:</strong> 1/3 Espresso, 1/3 Sıcak Süt, 1/3 Süt Köpüğü.</p>
+                <div class="recipe-step">1. Geniş bir fincana double shot espresso hazırlayın.</div>
+                <div class="recipe-step">2. Sütü yoğun bir köpük oluşana kadar buhar çubuğuyla köpürtün.</div>
+                <div class="recipe-step">3. Önce sütü, ardından yoğun köpüğü kahvenin üzerine ekleyin.</div>
+                <p><em>İpucu: Üzerine kakao tozu serpebilirsiniz.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mocha" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-mocha')">&times;</span>
+            <div class="modal-header">
+                <h2>Mocha Yapımı</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>İçerik:</strong> Espresso, Çikolata şurubu/tozu, Süt, Krema.</p>
+                <div class="recipe-step">1. Bardağın dibine 2 tatlı kaşığı çikolata sosu veya tozu koyun.</div>
+                <div class="recipe-step">2. Üzerine sıcak espressoyu ekleyip çikolatayı iyice eritin.</div>
+                <div class="recipe-step">3. Sıcak sütü ekleyin ve karıştırın.</div>
+                <div class="recipe-step">4. İsteğe bağlı olarak krema ile süsleyin.</div>
+                <p><em>İpucu: Üzerine çikolata parçacıkları serpiştirebilirsiniz.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-americano" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-americano')">&times;</span>
+            <div class="modal-header">
+                <h2>Americano Tarifi</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>İçerik:</strong> 1 shot Espresso, 2 birim Sıcak Su.</p>
+                <div class="recipe-step">1. Fincanınıza önce sıcak suyu koyun.</div>
+                <div class="recipe-step">2. Üzerine yavaşça 1 shot espresso ekleyin.</div>
+                <div class="recipe-step">3. Böylece krema ("köpük") bozulmadan üstte kalır.</div>
+                <p><em>İpucu: Suyu sonradan eklerseniz 'Long Black' değil, klasik Americano tadı değişebilir.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-turkish" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-turkish')">&times;</span>
+            <div class="modal-header">
+                <h2>Türk Kahvesi Yapımı</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>İçerik:</strong> 1 tatlı kaşığı Türk kahvesi, 1 fincan su, isteğe bağlı şeker.</p>
+                <div class="recipe-step">1. Cezveye kahve, su ve şekeri ekleyin.</div>
+                <div class="recipe-step">2. Kısık ateşte karıştırarak ısıtın.</div>
+                <div class="recipe-step">3. Kabarmaya başlayınca köpüğünü alıp fincana dökün.</div>
+                <p><em>İpucu: Köpüğü kaçırmamak için kaynatmayın.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal açma
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+
+        // Modal kapama
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+        // Modal dışına tıklayınca kapama
+        window.onclick = function (event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
